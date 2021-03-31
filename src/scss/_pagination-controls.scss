@@ -1,0 +1,37 @@
+.pagination-controls {
+  &__wrapper {
+    margin: 0 auto;
+  }
+  &__list {
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    align-items: center;
+  }
+  &__item {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.333;
+
+    &:not(:last-child) {
+      margin-right: 3px;
+    }
+  }
+  &__item.active {
+    // padding: 13px;
+    background: #ff6b08;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__item.active &__btn {
+    color: #ffffff;
+  }
+  &__btn {
+    border: none;
+    background-color: transparent;
+    width: 40px;
+    height: 40px;
+  }
+}
